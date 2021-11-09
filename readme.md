@@ -29,7 +29,6 @@
 ## About The Project :dash:
 
 ![Dash](/src/assets/home.png)
-
 Part of an exciting new experiment to use prediction markets to trade tokens on exchanges to manage the risk of exchange rate fluctuations.
 
 
