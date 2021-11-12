@@ -58,7 +58,6 @@ export default new Vuex.Store({
     },
     getTimeSeriesDaily({ state, commit }, payload) {
       var comingdata = payload.daymonthyear
-      console.log(comingdata);
       commit("setTimeSeriesDaily", []);
       return axios
         .get(`${state.apiURL}/query`, {
@@ -71,7 +70,6 @@ export default new Vuex.Store({
           },
         })
         .then((res) => {
-          console.log(res.data);
           let metaData = res.data["Meta Data"];
           let data = res.data[payload.daymonthyearr];
           let comingData = [];
